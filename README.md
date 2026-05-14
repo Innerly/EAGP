@@ -230,7 +230,7 @@ Other IR settings: IR_5, IR_7 (intermediate imbalance levels).
 
 ## Method
 
-- **ESM2** (650M parameters) encodes each protein sequence into a 640-dimensional embedding via mean pooling of the last hidden layer
+- **ESM2** (650M parameters) encodes each protein sequence into a 1280-dimensional embedding via mean pooling of the last hidden layer
 - **WGAN-GP** generates synthetic minority-class embeddings to balance the training set (upsamples to ~2500–3000 samples per class)
 - The **classifier** is a 3-layer MLP with GELU activation, dropout regularization, and cross-entropy loss
 - Models are selected by best validation weighted F1-score
